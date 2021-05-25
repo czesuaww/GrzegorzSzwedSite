@@ -23,6 +23,7 @@ nav .navbar-brand {
 }
 
 nav .nav-link {
+  position: relative;
   margin-right: 25px;
 }
 
@@ -34,8 +35,41 @@ nav .nav-link:hover, nav a:hover {
   color: #c25668;
 }
 
+nav .nav-link::after,
+nav .nav-link::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav .nav-link::before {
+  top: 0px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+nav .nav-link::after {
+  bottom: 0px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+nav .nav-link:hover::after,
+nav .nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 nav .fa-bars {
   padding: 8px;
+  font-size: 40px;
 }
 
 nav .active {
