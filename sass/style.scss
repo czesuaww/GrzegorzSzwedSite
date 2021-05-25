@@ -1,3 +1,4 @@
+@import 'colors';
 *,
 *::before,
 *::after{
@@ -10,4 +11,30 @@ body{
     position: relative;
     background-color: #333;
     font-family: 'KoHo', sans-serif;
+}
+
+nav{
+    text-transform: uppercase;
+    background-color: rgba(29, 26, 26,0.5);
+    .navbar-brand{
+        margin-left: 25px;
+    }
+    .nav-link{
+        margin-right: 25px;
+    }
+    .nav-link,a,i{
+       color: $white-color;  
+    }
+    .nav-link:hover,a:hover{
+        color: $pink-color;
+    }
+ 
+    .fa-bars{
+        padding: 8px; //adding some padding to burger menu, to have more space by clicking it.
+    }
+    .active{
+        color: $pink-color;;
+
+    }
+   
 }

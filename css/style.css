@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,37 @@
 }
 
 body {
+  position: relative;
   background-color: #333;
+  font-family: 'KoHo', sans-serif;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: rgba(29, 26, 26, 0.5);
+}
+
+nav .navbar-brand {
+  margin-left: 25px;
+}
+
+nav .nav-link {
+  margin-right: 25px;
+}
+
+nav .nav-link, nav a, nav i {
+  color: #fff;
+}
+
+nav .nav-link:hover, nav a:hover {
+  color: #c25668;
+}
+
+nav .fa-bars {
+  padding: 8px;
+}
+
+nav .active {
+  color: #c25668;
 }
 /*# sourceMappingURL=style.css.map */
