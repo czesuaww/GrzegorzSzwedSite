@@ -27,7 +27,7 @@ nav{
        color: $white-color;  
     }
     .nav-link:hover,a:hover{
-        color: $pink-color;
+        color: $royalBlue-color;
     }
     .nav-link::after,
     .nav-link::before{
@@ -62,12 +62,10 @@ nav{
         font-size: 40px;
     }
     .active{
-        color: $pink-color;;
+        color: $royalBlue-color;
     }
     img{
         height: 55px;
         width: 230px;
     }
 }
-
-

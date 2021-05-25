@@ -32,7 +32,7 @@ nav .nav-link, nav a, nav i {
 }
 
 nav .nav-link:hover, nav a:hover {
-  color: #c25668;
+  color: royalblue;
 }
 
 nav .nav-link::after,
@@ -73,7 +73,7 @@ nav .fa-bars {
 }
 
 nav .active {
-  color: #c25668;
+  color: royalblue;
 }
 
 nav img {
