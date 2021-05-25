@@ -15,7 +15,7 @@ body{
 
 nav{
     text-transform: uppercase;
-    background-color: rgba(29, 26, 26,0.5);
+    background-color: rgb(41, 38, 38);
     .navbar-brand{
         margin-left: 25px;
     }
@@ -36,5 +36,9 @@ nav{
         color: $pink-color;;
 
     }
-   
+    img{
+        height: 55px;
+        width: 230px;
+    }
 }
+

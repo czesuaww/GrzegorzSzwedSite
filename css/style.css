@@ -15,7 +15,7 @@ body {
 
 nav {
   text-transform: uppercase;
-  background-color: rgba(29, 26, 26, 0.5);
+  background-color: #292626;
 }
 
 nav .navbar-brand {
@@ -40,5 +40,10 @@ nav .fa-bars {
 
 nav .active {
   color: #c25668;
+}
+
+nav img {
+  height: 55px;
+  width: 230px;
 }
 /*# sourceMappingURL=style.css.map */
