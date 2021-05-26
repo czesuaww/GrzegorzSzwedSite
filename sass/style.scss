@@ -13,10 +13,14 @@ body{
     font-family: 'KoHo', sans-serif;
 }
 
+
 nav{
     text-transform: uppercase;
     background-color: rgb(41, 38, 38);
     width: 100%;
+    border-bottom: 2px white solid;
+    opacity: 0;
+    animation: nav-animation 2s 2s;
     .navbar-brand{
         margin-left: 25px;
     }
@@ -71,13 +75,16 @@ nav{
     }
 }
 
-
 //HEADER//
 
 header{
     color: $white-color;
     h1{
-        text-transform: uppercase;
+        text-transform: uppercase;    
+        animation: text-animation 2s ease-in-out;  
+    }
+    h3{
+        animation: text-animation 2s ease-in;  
     }
 
     .hero-img{
@@ -117,5 +124,23 @@ header{
         .hero-img{
             background: url(../img/headerBig.jpg); 
         }
+    }
+}
+
+@keyframes nav-animation {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        transform: translateX(-100%);
+    }100%{
+        transform: translateX(0);
     }
 }

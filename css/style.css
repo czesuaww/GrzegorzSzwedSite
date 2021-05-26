@@ -17,6 +17,10 @@ nav {
   text-transform: uppercase;
   background-color: #292626;
   width: 100%;
+  border-bottom: 2px white solid;
+  opacity: 0;
+  -webkit-animation: nav-animation 2s 2s;
+          animation: nav-animation 2s 2s;
 }
 
 nav .navbar-brand {
@@ -88,6 +92,13 @@ header {
 
 header h1 {
   text-transform: uppercase;
+  -webkit-animation: text-animation 2s ease-in-out;
+          animation: text-animation 2s ease-in-out;
+}
+
+header h3 {
+  -webkit-animation: text-animation 2s ease-in;
+          animation: text-animation 2s ease-in;
 }
 
 header .hero-img {
@@ -134,6 +145,52 @@ header .yellow-text {
 @media (min-width: 1200px) {
   header .hero-img {
     background: url(../img/headerBig.jpg);
+  }
+}
+
+@-webkit-keyframes nav-animation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes nav-animation {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes text-animation {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
