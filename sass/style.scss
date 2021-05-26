@@ -20,7 +20,7 @@ nav{
     width: 100%;
     border-bottom: 2px white solid;
     opacity: 0;
-    animation: nav-animation 2s 2s;
+    animation: nav-animation 2s 3s forwards;
     .navbar-brand{
         margin-left: 25px;
     }

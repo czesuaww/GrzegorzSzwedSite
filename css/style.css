@@ -19,8 +19,8 @@ nav {
   width: 100%;
   border-bottom: 2px white solid;
   opacity: 0;
-  -webkit-animation: nav-animation 2s 2s;
-          animation: nav-animation 2s 2s;
+  -webkit-animation: nav-animation 2s 3s forwards;
+          animation: nav-animation 2s 3s forwards;
 }
 
 nav .navbar-brand {
