@@ -12,7 +12,8 @@
     <script src="https://kit.fontawesome.com/ce1ab2aef5.js" crossorigin="anonymous"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0 ">
+  <!-- NAV -->
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 "><!--Nadanie position fixed, żeby nasz navbar się pokazywał-->
         <div class="container-fluid ">
           <a class="navbar-brand" href="#"><img class="'navbarLogo" src="img/logoNavbar.png" alt="logoNavar"></a><!--changed to my logo-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +32,19 @@
           </div>
         </div>
       </nav>
-      <!-- this section below is just for tests -->
-      <div id="home"></div>
-      <div id="aboutme" style="height:100vh; background-color: green;"></div>
+      <!-- END NAV -->
+      <!-- HEADER -->
+     <header>
+      <div class="hero-img">
+        <div class="hero-shadow"></div>
+        <div class="hero-text">
+          <h1>Hello. My name is Grzegorz <span class="yellow-text">Szwed</span></h1>
+          <h3>Welcome to my website</h3>
+        </div>
+        </div>
+     </header>
+     <!-- EDN HEADER -->
+     <!-- this section below is just for tests -->
       <div id="education" style="height:100vh; background-color: yellow;"></div>
       <div id="skills" style="height:100vh; background-color: royalblue;"></div>
       <div id="portfolio" style="height:100vh; background-color: pink;"></div>
