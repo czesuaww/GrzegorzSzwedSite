@@ -1,0 +1,19 @@
+//animation of navigation
+@keyframes nav-animation {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//animation of text in header
+@keyframes text-animation {
+    0% {
+        transform: translateX(-100%);
+    }100%{
+        transform: translateX(0);
+    }
+}

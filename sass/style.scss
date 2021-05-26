@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animations';
 *,
 *::before,
 *::after{
@@ -124,23 +125,5 @@ header{
         .hero-img{
             background: url(../img/headerBig.jpg); 
         }
-    }
-}
-
-@keyframes nav-animation {
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes text-animation {
-    0% {
-        transform: translateX(-100%);
-    }100%{
-        transform: translateX(0);
     }
 }
