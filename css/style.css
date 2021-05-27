@@ -89,7 +89,7 @@ nav {
 }
 
 nav .navbar-brand {
-  margin-left: 25px;
+  margin-left: -27px;
 }
 
 nav .nav-link {
@@ -157,11 +157,13 @@ header {
 
 header h1 {
   text-transform: uppercase;
+  font-size: 21px;
   -webkit-animation: text-animation 2s ease-in-out;
           animation: text-animation 2s ease-in-out;
 }
 
 header h3 {
+  font-size: 15px;
   -webkit-animation: text-animation 2s ease-in;
           animation: text-animation 2s ease-in;
 }
@@ -210,6 +212,7 @@ header .yellow-text {
 
 header .btn-outline-light {
   opacity: 0;
+  font-size: 14px;
   -webkit-animation: show-item-header-animation 2s 2s forwards;
           animation: show-item-header-animation 2s 2s forwards;
 }
@@ -222,6 +225,30 @@ header .fa-chevron-down {
   color: #fff;
   -webkit-animation: show-item-header-animation 2s 2s forwards;
           animation: show-item-header-animation 2s 2s forwards;
+}
+
+@media (min-width: 375px) {
+  nav .navbar-brand {
+    margin-left: 0;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  header h3 {
+    font-size: 20px;
+  }
+  header .btn-outline-light {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 35px;
+  }
+  header h3 {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1200px) {

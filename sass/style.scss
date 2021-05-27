@@ -24,7 +24,7 @@ nav{
     animation: nav-animation 2s 3s forwards;
     z-index: 1;
     .navbar-brand{
-        margin-left: 25px;
+        margin-left: -27px;
     }
     .nav-link{
         position: relative;
@@ -83,9 +83,11 @@ header{
     color: $white-color;
     h1{
         text-transform: uppercase;    
+        font-size: 21px;
         animation: text-animation 2s ease-in-out;  
     }
     h3{
+        font-size: 15px;
         animation: text-animation 2s ease-in;  
     }
 
@@ -122,6 +124,7 @@ header{
     }
     .btn-outline-light{
         opacity: 0;
+        font-size: 14px;
         animation: show-item-header-animation 2s 2s forwards;
     }
     .fa-chevron-down{
@@ -131,6 +134,37 @@ header{
         font-size: 30px;
         color: $white-color;
         animation: show-item-header-animation 2s 2s forwards;
+    }
+}
+
+
+@media (min-width: 375px){
+    nav{
+        .navbar-brand{
+            margin-left: 0;
+        }
+    }
+    header{
+        h1{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        .btn-outline-light{
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        h1{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 22px;
+        }
     }
 }
 
