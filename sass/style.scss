@@ -22,6 +22,7 @@ nav{
     border-bottom: 2px white solid;
     opacity: 0;
     animation: nav-animation 2s 3s forwards;
+    z-index: 1;
     .navbar-brand{
         margin-left: 25px;
     }
@@ -95,7 +96,7 @@ header{
         background-position: center;
         background-size:cover;
         background-attachment: fixed; //when we scrool website. the picture is following us
-        z-index: -1;
+        z-index: 0;
     }
  
     .hero-shadow{
@@ -114,9 +115,22 @@ header{
         height: 100%;//nadanie heigth żeby text się nam wyśrodkował 
         padding: 50px;
         text-align: center;
+        z-index: 5;
     }
     .yellow-text{
         color: $orange-color;
+    }
+    .btn-outline-light{
+        opacity: 0;
+        animation: show-item-header-animation 2s 2s forwards;
+    }
+    .fa-chevron-down{
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        font-size: 30px;
+        color: $white-color;
+        animation: show-item-header-animation 2s 2s forwards;
     }
 }
 
@@ -127,3 +141,4 @@ header{
         }
     }
 }
+

@@ -17,3 +17,13 @@
         transform: translateX(0);
     }
 }
+
+//animation of aroow and button on header
+@keyframes show-item-header-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
