@@ -77,15 +77,17 @@ body {
   font-family: 'KoHo', sans-serif;
 }
 
+.unhide {
+  -webkit-animation: nav-animation 2s 1s forwards;
+          animation: nav-animation 2s 1s forwards;
+}
+
 nav {
   text-transform: uppercase;
   background-color: #292626;
   width: 100%;
   border-bottom: 2px white solid;
   opacity: 0;
-  -webkit-animation: nav-animation 2s 3s forwards;
-          animation: nav-animation 2s 3s forwards;
-  z-index: 1;
 }
 
 nav .navbar-brand {
