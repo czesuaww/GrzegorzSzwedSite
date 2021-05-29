@@ -15,7 +15,7 @@ body{
 }
 
 .unhide{
-     animation: nav-animation 2s 1s forwards;
+     animation: nav-animation .5s .2s forwards;
 }
 
 //NAVBAR
@@ -23,7 +23,6 @@ nav{
     text-transform: uppercase;
     width: 100%;
     opacity: 0;
-    transition: background-color .6s;
     .navbar-brand{
         margin-left: -27px;
     }
@@ -123,6 +122,9 @@ header{
         opacity: 0;
         font-size: 14px;
         animation: show-item-header-animation 2s 2s forwards;
+    }
+    .btn-outline-light:hover{
+        background: rgba(255, 255, 255, 0.4);
     }
     .fa-chevron-down{
         position: absolute;

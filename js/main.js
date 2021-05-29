@@ -18,6 +18,5 @@ document.addEventListener('DOMContentLoaded', function(){
             navbar.classList.remove('unhide');
         }
     }
-
     window.addEventListener('scroll',scroolFunction);
 });

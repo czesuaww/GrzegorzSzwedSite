@@ -80,16 +80,14 @@ body {
 }
 
 .unhide {
-  -webkit-animation: nav-animation 2s 1s forwards;
-          animation: nav-animation 2s 1s forwards;
+  -webkit-animation: nav-animation .5s .2s forwards;
+          animation: nav-animation .5s .2s forwards;
 }
 
 nav {
   text-transform: uppercase;
   width: 100%;
   opacity: 0;
-  -webkit-transition: background-color .6s;
-  transition: background-color .6s;
 }
 
 nav .navbar-brand {
@@ -219,6 +217,10 @@ header .btn-outline-light {
   font-size: 14px;
   -webkit-animation: show-item-header-animation 2s 2s forwards;
           animation: show-item-header-animation 2s 2s forwards;
+}
+
+header .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 header .fa-chevron-down {
