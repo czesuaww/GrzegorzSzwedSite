@@ -9,15 +9,15 @@ headerButton.addEventListener('click', ()=>{
 headerArrow.addEventListener('click', ()=>{
     navbar.classList.add('unhide');
 });
-// window.onscroll = function() {
-//     var currentScrollPos = window.pageYOffset;
-//     // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
-    
-//     if (currentScrollPos > 20) {
-//       // I am using 'display' instead of 'top':
-//       document.getElementById("navbar").style.opacity = "1";
-//     } else {
-//       document.getElementById("navbar").style.opacity = "0";
-//     }
-// }
 
+document.addEventListener('DOMContentLoaded', function(){
+    const scroolFunction = () => {
+        if(window.scrollY>=937){
+            navbar.classList.add('unhide');
+        }else{
+            navbar.classList.remove('unhide');
+        }
+    }
+
+    window.addEventListener('scroll',scroolFunction);
+});
