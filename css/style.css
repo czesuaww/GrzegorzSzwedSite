@@ -84,6 +84,13 @@ body {
           animation: nav-animation .5s .2s forwards;
 }
 
+.underline {
+  margin: 0 auto 30px;
+  width: 100px;
+  height: 4px;
+  background-color: orange;
+}
+
 nav {
   text-transform: uppercase;
   width: 100%;
@@ -103,8 +110,8 @@ nav .nav-link, nav a, nav i {
   color: #fff;
 }
 
-nav .nav-link:hover, nav a:hover {
-  color: royalblue;
+nav .nav-link:hover, nav .navbar-brand:hover, nav a:hover {
+  color: orange;
 }
 
 nav .nav-link::after,
@@ -145,7 +152,7 @@ nav .fa-bars {
 }
 
 nav .active {
-  color: royalblue;
+  color: orange;
 }
 
 nav img {
@@ -208,7 +215,7 @@ header .hero-text {
   z-index: 5;
 }
 
-header .yellow-text {
+header .orange-text {
   color: orange;
 }
 
@@ -231,6 +238,27 @@ header .fa-chevron-down {
   color: #fff;
   -webkit-animation: show-item-header-animation 2s 2s forwards;
           animation: show-item-header-animation 2s 2s forwards;
+}
+
+.aboutme h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 45px;
+}
+
+.aboutme .fa-mobile-alt {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.aboutme .aboutme-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutme .aboutme-card-text {
+  font-size: 14px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: 375px) {

@@ -18,6 +18,12 @@ body{
      animation: nav-animation .5s .2s forwards;
 }
 
+.underline{
+    margin: 0 auto 30px;
+    width: 100px;
+    height: 4px;
+    background-color: $main-color;
+}
 //NAVBAR
 nav{
     text-transform: uppercase;
@@ -33,8 +39,8 @@ nav{
     .nav-link,a,i{
        color: $white-color;  
     }
-    .nav-link:hover,a:hover{
-        color: $royalBlue-color;
+    .nav-link:hover,.navbar-brand:hover,a:hover{
+        color: $main-color;
     }
     .nav-link::after,
     .nav-link::before{
@@ -65,7 +71,7 @@ nav{
         font-size: 40px;
     }
     .active{
-        color: $royalBlue-color;
+        color: $main-color;
     }
     img{
         height: 55px;
@@ -115,8 +121,8 @@ header{
         text-align: center;
         z-index: 5;
     }
-    .yellow-text{
-        color: $orange-color;
+    .orange-text{
+        color: $main-color;
     }
     .btn-outline-light{
         opacity: 0;
@@ -137,6 +143,28 @@ header{
 }
 //END OF HEADER
 
+
+//SECTION ABOUT ME
+
+.aboutme{
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 45px;
+    }
+    .fa-mobile-alt{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .aboutme-card-title{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .aboutme-card-text{
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+}
 @media (min-width: 375px){
     nav{
         .navbar-brand{
