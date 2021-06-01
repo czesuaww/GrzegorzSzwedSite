@@ -1,22 +1,34 @@
-const headerButton = document.querySelector('.btn-outline-light');
-const navbar = document.querySelector('.navbar');
-const headerArrow = document.querySelector('.fa-chevron-down');
+let $headerButton;
+let $navbar;
+let $headerArrow;
 
-headerButton.addEventListener('click', ()=>{
-    navbar.classList.add('unhide');
-});
+const prepareDOMElemets = () => {
+    $headerButton = document.querySelector('.btn-outline-light');
+    $navbar = document.querySelector('.navbar');
+    $headerArrow = document.querySelector('.fa-chevron-down');
+}
 
-headerArrow.addEventListener('click', ()=>{
-    navbar.classList.add('unhide');
-});
+const prepareDOMEvents = () => {
+    
+    const arrowButtonFunction = () => {
+        navbar.classList.add('unhide');
+    };
 
-document.addEventListener('DOMContentLoaded', function(){
     const scroolFunction = () => {
         if(window.scrollY>=937){
             navbar.classList.add('unhide');
         }else{
             navbar.classList.remove('unhide');
         }
-    }
+    };
+    $headerButton.addEventListener('click',arrowButtonFunction);
+    $headerArrow.addEventListener('click',arrowButtonFunction);
     window.addEventListener('scroll',scroolFunction);
-});
+};
+
+const main = () => {
+    prepareDOMElemets();
+    prepareDOMEvents();
+};
+
+document.addEventListener('DOMContentLoaded', main);
