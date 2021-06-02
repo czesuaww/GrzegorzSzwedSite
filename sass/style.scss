@@ -10,7 +10,7 @@
 
 body{
     position: relative;
-    background-color: #333;
+    background-color: white;
     font-family: 'KoHo', sans-serif;
 }
 
@@ -30,7 +30,7 @@ nav{
     width: 100%;
     opacity: 0;
     .navbar-brand{
-        margin-left: -27px;
+        margin-left: -5px;
     }
     .nav-link{
         position: relative;
@@ -143,28 +143,31 @@ header{
 }
 //END OF HEADER
 
-
 //SECTION ABOUT ME
 
+
 .aboutme{
+
     h2{
         text-align: center;
         text-transform: uppercase;
         padding-top: 45px;
     }
-    .fa-mobile-alt{
-        margin-top: 20px;
-        font-size: 30px;
+    .card{
+        margin: 0 auto;
+        width: 18rem;
+        border: none;
     }
-    .aboutme-card-title{
-        font-size: 18px;
-        text-transform: uppercase;
+    .card-img-top{
+        border-radius: 5%;
     }
-    .aboutme-card-text{
-        font-size: 14px;
-        margin-bottom: 45px;
+    .card-text{
+        text-align: center;
+        margin: 25px 0 50px 0;
     }
 }
+
+//Media
 @media (min-width: 375px){
     nav{
         .navbar-brand{
@@ -184,6 +187,13 @@ header{
     }
 }
 
+@media (min-height: 667px){
+    .aboutme{
+        .text-My-P{
+            top: 49%;
+        }
+    }
+}
 @media (min-width: 768px){
     header{
         h1{
@@ -193,6 +203,18 @@ header{
             font-size: 22px;
         }
     }
+
+    .aboutme{
+        .card{
+            margin-bottom: 50px;
+        }
+
+        .card-text{
+            text-align:justify;
+            margin-left: 300px;
+        }
+        
+    }
 }
 
 @media (min-width: 1200px) {
@@ -201,4 +223,5 @@ header{
             background: url(../img/headerBig.jpg); 
         }
     }
+    
 }
