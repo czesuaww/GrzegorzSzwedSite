@@ -15,7 +15,7 @@ const prepareDOMEvents = () => {
     };
 
     const scroolFunction = () => {
-        if(window.scrollY>=937){
+        if(window.scrollY>=700){
             navbar.classList.add('unhide');
         }else{
             navbar.classList.remove('unhide');
