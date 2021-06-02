@@ -73,6 +73,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 82px;
+}
+
 body {
   position: relative;
   background-color: white;
@@ -95,6 +99,7 @@ nav {
   text-transform: uppercase;
   width: 100%;
   opacity: 0;
+  background-color: rgba(194, 171, 129, 0.8);
 }
 
 nav .navbar-brand {
@@ -243,7 +248,6 @@ header .fa-chevron-down {
 .aboutme h2 {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 45px;
 }
 
 .aboutme .card {
@@ -259,6 +263,33 @@ header .fa-chevron-down {
 .aboutme .card-text {
   text-align: center;
   margin: 25px 0 50px 0;
+}
+
+.aboutme2 {
+  margin-top: 10vh;
+}
+
+.aboutme2 .fas {
+  font-size: 30px;
+}
+
+.aboutme2 .aboutme-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutme2 .aboutme-card-text {
+  font-size: 14px;
+  margin-bottom: 45px;
+}
+
+.aboutme2 .aboutme-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.aboutme2 .aboutme-hover:hover {
+  color: orange;
 }
 
 @media (min-width: 375px) {
@@ -296,11 +327,29 @@ header .fa-chevron-down {
     text-align: justify;
     margin-left: 300px;
   }
+  .aboutme2 {
+    margin-top: 20vh;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 56px;
+  }
+  .aboutme h2 {
+    margin-top: 50px;
+  }
+  .aboutme2 {
+    margin-top: 30vh;
+  }
 }
 
 @media (min-width: 1200px) {
   header .hero-img {
     background: url(../img/headerBig.jpg);
+  }
+  .aboutme2 {
+    margin-top: 35vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

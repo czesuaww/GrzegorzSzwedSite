@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+html{
+    scroll-padding-top: 82px; //navbar is higher than section h2 about me
+}
+
 body{
     position: relative;
     background-color: white;
@@ -29,12 +33,14 @@ nav{
     text-transform: uppercase;
     width: 100%;
     opacity: 0;
+    background-color: rgba(194, 171, 129, 0.8);
     .navbar-brand{
         margin-left: -5px;
     }
     .nav-link{
         position: relative;
         margin-right: 25px;
+
     }
     .nav-link,a,i{
        color: $white-color;  
@@ -144,14 +150,12 @@ header{
 //END OF HEADER
 
 //SECTION ABOUT ME
-
-
 .aboutme{
 
     h2{
         text-align: center;
         text-transform: uppercase;
-        padding-top: 45px;
+        // padding-top: 65px;
     }
     .card{
         margin: 0 auto;
@@ -166,6 +170,29 @@ header{
         margin: 25px 0 50px 0;
     }
 }
+
+.aboutme2{
+    margin-top: 10vh;
+    .fas{
+        font-size: 30px;
+
+    }
+    .aboutme-card-title{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .aboutme-card-text{
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+    .aboutme-hover{
+        transition: color .3s; 
+    }
+    .aboutme-hover:hover{
+        color: $main-color;
+    }
+}
+
 
 //Media
 @media (min-width: 375px){
@@ -213,15 +240,36 @@ header{
             text-align:justify;
             margin-left: 300px;
         }
-        
+    }
+
+    .aboutme2{
+        margin-top: 20vh;   
     }
 }
 
+@media (min-width: 992px) {
+    html{
+        scroll-padding-top: 56px;
+    }
+    .aboutme{
+        h2{
+            margin-top: 50px;
+        }
+    }
+    .aboutme2{
+        margin-top: 30vh;   
+    }
+    
+}
 @media (min-width: 1200px) {
     header{
         .hero-img{
             background: url(../img/headerBig.jpg); 
         }
+    }
+
+    .aboutme2{
+        margin-top: 35vh;   
     }
     
 }
