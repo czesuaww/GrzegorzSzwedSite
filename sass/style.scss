@@ -9,6 +9,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     scroll-padding-top: 82px; //navbar is higher than section h2 about me
 }
 
@@ -21,7 +22,7 @@ body{
 h2{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 65px;
+    // padding-top: 65px;
 }
 
 .unhide{
@@ -37,9 +38,10 @@ h2{
 //NAVBAR
 nav{
     text-transform: uppercase;
-    width: 100%;
+    // width: 100%;
     opacity: 0;
     background-color: rgba(194, 171, 129, 0.8);
+    z-index: 1;
     .navbar-brand{
         margin-left: -5px;
     }
@@ -85,8 +87,8 @@ nav{
         color: $main-color;
     }
     img{
-        height: 55px;
-        width: 230px;
+        // height: 55px;
+        // width: 230px;
     }
 }
 //END OF NAVBAR
@@ -111,7 +113,7 @@ header{
         background-size:cover;
         // background-repeat: no-repeat;
         background-attachment: fixed; //when we scrool website. the picture is following us
-        z-index: 1;
+        z-index: 0;
     }
  
     .hero-shadow{
@@ -119,7 +121,7 @@ header{
         width: 100%;
         height: 100%;
         background-color: rgba($color: #000000, $alpha: 0.8);
-        z-index: -1;
+        z-index: -10;
     }
 
     .hero-text{
@@ -175,8 +177,10 @@ header{
 .interests{
     background-color: #f6ecc4;
     background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
-
     margin-top: 10vh;
+    h2{
+        margin-top: -50px;
+    }
     .fas{
         font-size: 30px;
 
@@ -197,6 +201,22 @@ header{
     }
 }
 
+//CAROUSEL
+.portfolio{
+    h2{
+        margin-top: -50px;
+    }
+    .carousel-item{
+        position: relative;      
+        height: 600px;
+    }   
+    .carousel-caption{
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
 
 //Media
 @media (min-width: 375px){
@@ -249,8 +269,12 @@ header{
 }
 
 @media (min-width: 992px) {
-    html{
-        scroll-padding-top: 47px;
+    // html{
+        // scroll-padding-top: 56px;
+    // }
+
+    nav{
+        height: 77px;
     }
     .aboutme{
         h2{
