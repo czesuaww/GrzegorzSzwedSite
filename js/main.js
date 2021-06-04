@@ -20,7 +20,7 @@ const prepareDOMEvents = () => {
     };
 
     const scroolFunction = () => {
-        if(window.scrollY>=250){
+        if(window.scrollY>=220){
             $navbar.classList.add('unhide');
         }else{
             $navbar.classList.remove('unhide');

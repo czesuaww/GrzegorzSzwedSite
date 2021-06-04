@@ -83,6 +83,12 @@ body {
   font-family: 'KoHo', sans-serif;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 65px;
+}
+
 .unhide {
   -webkit-animation: nav-animation .5s .2s forwards;
           animation: nav-animation .5s .2s forwards;
@@ -108,7 +114,7 @@ nav .navbar-brand {
 
 nav .nav-link {
   position: relative;
-  margin-right: 25px;
+  margin: 2px;
 }
 
 nav .nav-link, nav a, nav i {
@@ -248,12 +254,6 @@ header .fa-chevron-down {
           animation: show-item-header-animation 2s 2s forwards;
 }
 
-.aboutme h2 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 65px;
-}
-
 .aboutme .card {
   margin: 0 auto;
   width: 18rem;
@@ -269,30 +269,32 @@ header .fa-chevron-down {
   margin: 25px 0 50px 0;
 }
 
-.aboutme2 {
+.interests {
+  background-color: #f6ecc4;
+  background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-top: 10vh;
 }
 
-.aboutme2 .fas {
+.interests .fas {
   font-size: 30px;
 }
 
-.aboutme2 .aboutme-card-title {
+.interests .aboutme-card-title {
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.aboutme2 .aboutme-card-text {
+.interests .aboutme-card-text {
   font-size: 14px;
   margin-bottom: 50px;
 }
 
-.aboutme2 .aboutme-hover {
+.interests .aboutme-hover {
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 
-.aboutme2 .aboutme-hover:hover {
+.interests .aboutme-hover:hover {
   color: orange;
 }
 
@@ -331,7 +333,7 @@ header .fa-chevron-down {
     text-align: justify;
     margin-left: 300px;
   }
-  .aboutme2 {
+  .interests {
     margin-top: 20vh;
   }
 }
@@ -343,7 +345,7 @@ header .fa-chevron-down {
   .aboutme h2 {
     margin-top: 50px;
   }
-  .aboutme2 {
+  .interests {
     margin-top: 30vh;
   }
 }
@@ -352,7 +354,7 @@ header .fa-chevron-down {
   header .hero-img {
     background: url(../img/headerBig.jpg);
   }
-  .aboutme2 {
+  .interests {
     margin-top: 35vh;
   }
 }

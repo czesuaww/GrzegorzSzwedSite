@@ -18,6 +18,12 @@ body{
     font-family: 'KoHo', sans-serif;
 }
 
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 65px;
+}
+
 .unhide{
      animation: nav-animation .5s .2s forwards;
 }
@@ -39,8 +45,7 @@ nav{
     }
     .nav-link{
         position: relative;
-        margin-right: 25px;
-
+        margin: 2px;
     }
     .nav-link,a,i{
        color: $white-color;  
@@ -153,12 +158,6 @@ header{
 
 //SECTION ABOUT ME
 .aboutme{
-
-    h2{
-        text-align: center;
-        text-transform: uppercase;
-        padding-top: 65px;
-    }
     .card{
         margin: 0 auto;
         width: 18rem;
@@ -173,7 +172,10 @@ header{
     }
 }
 
-.aboutme2{
+.interests{
+    background-color: #f6ecc4;
+    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+
     margin-top: 10vh;
     .fas{
         font-size: 30px;
@@ -241,7 +243,7 @@ header{
             margin-left: 300px;
         }
     }
-    .aboutme2{
+    .interests{
         margin-top: 20vh;   
     }
 }
@@ -255,7 +257,7 @@ header{
             margin-top: 50px;
         }
     }
-    .aboutme2{
+    .interests{
         margin-top: 30vh;   
     }
     
@@ -266,7 +268,7 @@ header{
             background: url(../img/headerBig.jpg); 
         }
     }
-    .aboutme2{
+    .interests{
         margin-top: 35vh;   
     }
 }
