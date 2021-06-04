@@ -237,6 +237,9 @@ header .btn-outline-light:hover {
 
 header .fa-chevron-down {
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 0;
   opacity: 0;
   font-size: 30px;
@@ -248,6 +251,7 @@ header .fa-chevron-down {
 .aboutme h2 {
   text-align: center;
   text-transform: uppercase;
+  padding-top: 65px;
 }
 
 .aboutme .card {
@@ -280,7 +284,7 @@ header .fa-chevron-down {
 
 .aboutme2 .aboutme-card-text {
   font-size: 14px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .aboutme2 .aboutme-hover {
@@ -334,7 +338,7 @@ header .fa-chevron-down {
 
 @media (min-width: 992px) {
   html {
-    scroll-padding-top: 56px;
+    scroll-padding-top: 47px;
   }
   .aboutme h2 {
     margin-top: 50px;
