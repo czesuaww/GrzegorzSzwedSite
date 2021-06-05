@@ -38,7 +38,7 @@ h2{
 nav{
     text-transform: uppercase;
     opacity: 0;
-    background-color: rgba(194, 171, 129, 0.8);
+    background-color: rgb(194, 171, 129);
     // z-index: 1;
     .navbar-brand{
         margin-left: -5px;
@@ -180,6 +180,9 @@ header{
     background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
     margin-top: 10vh;
 
+    h2{
+        padding-top: 1px;
+    }
     .fas{
         font-size: 30px;
     }
