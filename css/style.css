@@ -74,7 +74,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 82px;
 }
 
@@ -105,7 +104,6 @@ nav {
   text-transform: uppercase;
   opacity: 0;
   background-color: rgba(194, 171, 129, 0.8);
-  z-index: 1;
 }
 
 nav .navbar-brand {
@@ -164,6 +162,11 @@ nav .fa-bars {
 
 nav .active {
   color: orange;
+}
+
+nav img {
+  height: 55px;
+  width: 230px;
 }
 
 header {
@@ -249,6 +252,10 @@ header .fa-chevron-down {
           animation: show-item-header-animation 2s 2s forwards;
 }
 
+.aboutme h2 {
+  padding-top: 25px;
+}
+
 .aboutme .card {
   margin: 0 auto;
   width: 18rem;
@@ -268,10 +275,6 @@ header .fa-chevron-down {
   background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-top: 10vh;
-}
-
-.interests h2 {
-  margin-top: -50px;
 }
 
 .interests .fas {
@@ -295,10 +298,6 @@ header .fa-chevron-down {
 
 .interests .aboutme-hover:hover {
   color: orange;
-}
-
-.portfolio h2 {
-  margin-top: -50px;
 }
 
 .portfolio .carousel-item {
@@ -328,12 +327,6 @@ header .fa-chevron-down {
   }
 }
 
-@media (min-height: 667px) {
-  .aboutme .text-My-P {
-    top: 49%;
-  }
-}
-
 @media (min-width: 768px) {
   header h1 {
     font-size: 35px;
@@ -355,10 +348,11 @@ header .fa-chevron-down {
 
 @media (min-width: 992px) {
   nav {
-    height: 77px;
+    height: 84px;
   }
   .aboutme h2 {
-    margin-top: 50px;
+    margin-top: -2px;
+    padding-top: 25px;
   }
   .interests {
     margin-top: 30vh;

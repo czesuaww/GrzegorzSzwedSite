@@ -31,7 +31,6 @@ const prepareDOMEvents = () => {
     $headerArrow.addEventListener('click',arrowButtonFunction);
     window.addEventListener('scroll',scroolFunction);
     $navItems.forEach(item => item.addEventListener('click', () => $navbarCollapse.classList.remove('show'))); //hide navbar after click on link
-
 };
 
 const main = () => {
