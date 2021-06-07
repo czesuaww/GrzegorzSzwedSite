@@ -86,6 +86,7 @@ body {
 h2 {
   text-align: center;
   text-transform: uppercase;
+  padding-top: 35px;
 }
 
 .unhide {
@@ -252,10 +253,6 @@ header .fa-chevron-down {
           animation: show-item-header-animation 2s 2s forwards;
 }
 
-.aboutme h2 {
-  padding-top: 25px;
-}
-
 .aboutme .card {
   margin: 0 auto;
   width: 18rem;
@@ -275,10 +272,6 @@ header .fa-chevron-down {
   background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-top: 10vh;
-}
-
-.interests h2 {
-  padding-top: 1px;
 }
 
 .interests .fas {
@@ -302,6 +295,33 @@ header .fa-chevron-down {
 
 .interests .aboutme-hover:hover {
   color: orange;
+}
+
+.education {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.education .underline-school {
+  height: 1px;
+  width: 100%;
+  background-color: orange;
+  margin-bottom: 15px;
+}
+
+.education .schools-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.education .scholl h3 {
+  text-transform: uppercase;
+}
+
+.portfolio {
+  background-color: #f6ecc4;
+  background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 }
 
 .portfolio .carousel-item {
@@ -353,10 +373,6 @@ header .fa-chevron-down {
 @media (min-width: 992px) {
   nav {
     height: 84px;
-  }
-  .aboutme h2 {
-    margin-top: -2px;
-    padding-top: 25px;
   }
   .interests {
     margin-top: 30vh;
