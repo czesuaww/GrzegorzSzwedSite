@@ -303,8 +303,9 @@ header .fa-chevron-down {
 }
 
 .education .underline-school {
+  margin: 0 auto;
   height: 1px;
-  width: 100%;
+  width: 80%;
   background-color: orange;
   margin-bottom: 15px;
 }
@@ -315,13 +316,52 @@ header .fa-chevron-down {
           justify-content: center;
 }
 
-.education .scholl h3 {
-  text-transform: uppercase;
+.education .scholl {
+  margin: 20px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
 }
 
-.portfolio {
+.education .scholl h3 {
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.education .scholl p {
+  padding: 15px 25px 25px;
+}
+
+.education .scholl:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.skills {
   background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+  margin-bottom: 25px;
+}
+
+.skills span {
+  color: orange;
+}
+
+.skills .my-skills {
+  margin-bottom: 35px;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.skills .fab {
+  font-size: 45px;
+  padding-bottom: 55px;
 }
 
 .portfolio .carousel-item {
