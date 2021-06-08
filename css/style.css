@@ -376,6 +376,45 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.contact {
+  background-color: #f6ecc4;
+  background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+}
+
+.contact .contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-me .contact-item {
+  margin: 30px 0;
+}
+
+.contact .contact-me .contact-item h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact .contact-me .contact-item .fab {
+  margin: 20px 10px;
+  font-size: 35px;
+}
+
+.contact .contact-me .contact-item .fa-instagram-square {
+  color: #C13584;
+}
+
+.contact .contact-me .contact-item .fa-github-square {
+  color: black;
+}
+
 @media (min-width: 375px) {
   nav .navbar-brand {
     margin-left: 0;
