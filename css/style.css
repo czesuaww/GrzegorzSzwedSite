@@ -24,46 +24,6 @@
   }
 }
 
-@-webkit-keyframes text-animation {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes text-animation {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes show-item-header-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes show-item-header-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .bounce-top {
   display: block;
   -webkit-animation: bounce-top 2s infinite both;
@@ -406,11 +366,6 @@ header .fa-chevron-down {
 .interests .aboutme-card-text {
   font-size: 14px;
   margin-bottom: 50px;
-}
-
-.interests .aboutme-hover {
-  -webkit-transition: color .3s;
-  transition: color .3s;
 }
 
 .interests .aboutme-hover:hover {
