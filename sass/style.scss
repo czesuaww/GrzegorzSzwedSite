@@ -151,7 +151,6 @@ header{
         opacity: 0;
         font-size: 30px;
         color: $white-color;
-        animation: show-item-header-animation 2s 2s forwards;
     }
 }
 //END OF HEADER
@@ -303,7 +302,7 @@ footer{
     text-align: center;
     background-image: linear-gradient(315deg, #a39d83 0%, #cea9a9 74%);
     .footer-text{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 0; //to be not space bettwen sections
         color: $white-color;
     }
@@ -329,13 +328,6 @@ footer{
     }
 }
 
-// @media (min-height: 667px){
-//     .aboutme{
-//         .text-My-P{
-//             // top: 49%;
-//         }
-//     }
-// }
 @media (min-width: 768px){
     header{
         h1{
