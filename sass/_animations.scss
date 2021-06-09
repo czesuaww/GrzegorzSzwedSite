@@ -10,24 +10,6 @@
     }
 }
 
-//animation of text in header
-@keyframes text-animation {
-    0% {
-        transform: translateX(-100%);
-    }100%{
-        transform: translateX(0);
-    }
-}
-
-//animation of aroow and button on header
-@keyframes show-item-header-animation {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .bounce-top {
     display: block; //we animate a block object, not a linear one, we add it so that it displays well in other browsers
