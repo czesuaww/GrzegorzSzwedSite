@@ -79,14 +79,14 @@ html {
 
 body {
   position: relative;
-  background-color: white;
+  background-color: #fff;
   font-family: 'KoHo', sans-serif;
 }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 35px;
+  padding-top: 49px;
 }
 
 .unhide {
@@ -269,7 +269,6 @@ header .fa-chevron-down {
 }
 
 .interests {
-  background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-top: 10vh;
 }
@@ -298,7 +297,6 @@ header .fa-chevron-down {
 }
 
 .education {
-  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -327,7 +325,6 @@ header .fa-chevron-down {
 }
 
 .education .scholl h3 {
-  padding-top: 25px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -342,7 +339,6 @@ header .fa-chevron-down {
 }
 
 .skills {
-  background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
   margin-bottom: 25px;
 }
@@ -377,7 +373,6 @@ header .fa-chevron-down {
 }
 
 .contact {
-  background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 }
 
@@ -413,6 +408,17 @@ header .fa-chevron-down {
 
 .contact .contact-me .contact-item .fa-github-square {
   color: black;
+}
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(315deg, #a39d83 0%, #cea9a9 74%);
+}
+
+footer .footer-text {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #fff;
 }
 
 @media (min-width: 375px) {

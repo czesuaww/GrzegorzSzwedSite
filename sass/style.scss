@@ -14,14 +14,14 @@ html{
 
 body{
     position: relative;
-    background-color: white;
+    background-color: $white-color;
     font-family: 'KoHo', sans-serif;
 }
 
 h2{
     text-align: center;
     text-transform: uppercase;
-    padding-top: 35px;
+    padding-top: 49px;
 }
 
 .unhide{
@@ -173,13 +173,8 @@ header{
 }
 
 .interests{
-    background-color: #f6ecc4;
-    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    background-image: $background-color-section;
     margin-top: 10vh;
-
-    // h2{
-    //     padding-top: 1px;
-    // }
     .fas{
         font-size: 30px;
     }
@@ -201,7 +196,7 @@ header{
 
 //EDUCATION
 .education{
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     text-align: center;
     
     .underline-school{
@@ -220,7 +215,6 @@ header{
         transition: transform .4s;
         
         h3{
-            padding-top: 25px;
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -238,8 +232,7 @@ header{
 //SKILLS
 
 .skills{
-    background-color: #f6ecc4;
-    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    background-image: $background-color-section;
     margin-bottom: 25px;
     span{
         color: $main-color;
@@ -275,9 +268,7 @@ header{
 //CONTACT
 
 .contact{
-    // margin-top: 35px;
-    background-color: #f6ecc4;
-    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    background-image: $background-color-section;
     
     .contact-me{
         display: flex;
@@ -305,7 +296,18 @@ header{
         }   
     }  
 }
-        
+    
+//FOOTER
+
+footer{
+    text-align: center;
+    background-image: linear-gradient(315deg, #a39d83 0%, #cea9a9 74%);
+    .footer-text{
+        font-size: 25px;
+        margin-bottom: 0; //to be not space bettwen sections
+        color: $white-color;
+    }
+}
 
 //Media
 @media (min-width: 375px){
