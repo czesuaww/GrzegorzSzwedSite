@@ -10,12 +10,15 @@
 
 html{
     scroll-padding-top: 82px; //navbar is higher than section h2 about me
+    overflow-x: hidden;
+
 }
 
 body{
     position: relative;
     background-color: $white-color;
     font-family: 'KoHo', sans-serif;
+    overflow-x: hidden;
 }
 
 h2{
@@ -35,13 +38,12 @@ h2{
     background-color: $main-color;
 }
 //NAVBAR
-nav{
+.navbar{
     text-transform: uppercase;
-    opacity: 0;
     background-color: rgb(194, 171, 129);
-    // z-index: 1;
+    z-index: 0;
     .navbar-brand{
-        margin-left: -5px;
+        margin-left: -1px;
     }
     .nav-link{
         position: relative;
@@ -78,7 +80,7 @@ nav{
         transform: translateY(0px);
     }
     .fa-bars{
-        padding: 8px; //adding some padding to burger menu, to have more space by clicking it.
+        padding: 12px; //adding some padding to burger menu, to have more space by clicking it.
         font-size: 40px;
     }
     .active{
@@ -89,6 +91,8 @@ nav{
         width: 230px;
     }
 }
+
+
 //END OF NAVBAR
 
 //HEADER//
@@ -105,11 +109,11 @@ header{
     }
     .hero-img{
         position: relative;
-        height: 100vh;
+        height: 100vh;   
         background: url(../img/headerSmall.jpg);
-        background-position: center;
-        background-size:cover;
-        // background-repeat: no-repeat;
+        // background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed; //when we scrool website. the picture is following us
         z-index: 0;
     }
@@ -185,9 +189,9 @@ header{
         font-size: 14px;
         margin-bottom: 50px;
     }
-    .aboutme-hover{
-        // transition: color .3s; 
-    }
+    // .aboutme-hover{
+    //     // transition: color .3s; 
+    // }
     .aboutme-hover:hover{
         color: $main-color;
     }
@@ -363,7 +367,7 @@ footer{
 @media (min-width: 1200px) {
     header{
         .hero-img{
-            background: url(../img/headerBig.jpg); 
+            // background: url(../img/headerBig.jpg); 
         }
     }
     .interests{

@@ -18,8 +18,10 @@ const prepareDOMEvents = () => {
     const arrowButtonFunction = () => {
         $navbar.classList.add('unhide');
     };
+    
 
     const scroolFunction = () => {
+        
         if(window.scrollY>=220){
             $navbar.classList.add('unhide');
         }else{
@@ -31,6 +33,7 @@ const prepareDOMEvents = () => {
     $headerArrow.addEventListener('click',arrowButtonFunction);
     window.addEventListener('scroll',scroolFunction);
     $navItems.forEach(item => item.addEventListener('click', () => $navbarCollapse.classList.remove('show'))); //hide navbar after click on link
+    window.addEventListener('load', AOS.refresh);
 };
 
 const main = () => {

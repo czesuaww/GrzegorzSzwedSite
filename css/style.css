@@ -5,7 +5,7 @@
   }
   100% {
     opacity: 1;
-    z-index: 10;
+    z-index: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -18,7 +18,7 @@
   }
   100% {
     opacity: 1;
-    z-index: 10;
+    z-index: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -158,12 +158,14 @@
 
 html {
   scroll-padding-top: 82px;
+  overflow-x: hidden;
 }
 
 body {
   position: relative;
   background-color: #fff;
   font-family: 'KoHo', sans-serif;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -184,31 +186,31 @@ h2 {
   background-color: orange;
 }
 
-nav {
+.navbar {
   text-transform: uppercase;
-  opacity: 0;
   background-color: #c2ab81;
+  z-index: 0;
 }
 
-nav .navbar-brand {
-  margin-left: -5px;
+.navbar .navbar-brand {
+  margin-left: -1px;
 }
 
-nav .nav-link {
+.navbar .nav-link {
   position: relative;
   margin: 2px;
 }
 
-nav .nav-link, nav a, nav i {
+.navbar .nav-link, .navbar a, .navbar i {
   color: #fff;
 }
 
-nav .nav-link:hover, nav .navbar-brand:hover, nav a:hover {
+.navbar .nav-link:hover, .navbar .navbar-brand:hover, .navbar a:hover {
   color: orange;
 }
 
-nav .nav-link::after,
-nav .nav-link::before {
+.navbar .nav-link::after,
+.navbar .nav-link::before {
   position: absolute;
   content: "";
   left: 0px;
@@ -220,35 +222,35 @@ nav .nav-link::before {
   transition: all 0.3s;
 }
 
-nav .nav-link::before {
+.navbar .nav-link::before {
   top: 0px;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
 
-nav .nav-link::after {
+.navbar .nav-link::after {
   bottom: 0px;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-nav .nav-link:hover::after,
-nav .nav-link:hover::before {
+.navbar .nav-link:hover::after,
+.navbar .nav-link:hover::before {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-nav .fa-bars {
-  padding: 8px;
+.navbar .fa-bars {
+  padding: 12px;
   font-size: 40px;
 }
 
-nav .active {
+.navbar .active {
   color: orange;
 }
 
-nav img {
+.navbar img {
   height: 55px;
   width: 230px;
 }
@@ -274,8 +276,8 @@ header .hero-img {
   position: relative;
   height: 100vh;
   background: url(../img/headerSmall.jpg);
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: 0;
 }
@@ -541,9 +543,6 @@ footer .footer-text {
 }
 
 @media (min-width: 1200px) {
-  header .hero-img {
-    background: url(../img/headerBig.jpg);
-  }
   .interests {
     margin-top: 35vh;
   }

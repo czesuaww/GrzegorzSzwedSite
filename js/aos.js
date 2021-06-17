@@ -1,7 +1,8 @@
 AOS.init({
 
     startEvent: 'DOMContentLoaded',
-    offset: 200,
+    // disable: 'mobile',
+    offset: 90,
     once: true
 
 });
