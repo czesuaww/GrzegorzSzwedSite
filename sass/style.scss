@@ -11,7 +11,6 @@
 html{
     scroll-padding-top: 82px; //navbar is higher than section h2 about me
     overflow-x: hidden;
-
 }
 
 body{
@@ -161,23 +160,22 @@ header{
 
 //SECTION ABOUT ME
 .aboutme{
-    .card{
-        margin: 0 auto;
-        width: 18rem;
-        border: none;
+    height: 100%;
+    .text-about-me{
+        p{
+            text-align: center;
+            margin-top: 15px;            
+        }
     }
     .card-img-top{
         border-radius: 5%;
-    }
-    .card-text{
-        text-align: center;
-        margin: 25px 0 50px 0;
+        margin-right: 15px;
     }
 }
 
 .interests{
     background-image: $background-color-section;
-    margin-top: 10vh;
+    // margin-top: 10vh;
     .fas{
         font-size: 30px;
     }
@@ -199,9 +197,7 @@ header{
 
 //EDUCATION
 .education{
-    // margin-bottom: 15px;
     text-align: center;
-    
     .underline-school{
         margin: 0 auto;
         height: 1px;
@@ -214,14 +210,15 @@ header{
     }
     .scholl{
         margin: 20px 10px;
+        height: 350px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transition: transform .4s;
         
         h3{
+            padding-top: 15px;
             text-transform: uppercase;
             font-weight: bold;
-        }
-        
+        } 
         p{
             padding: 15px 25px 25px;
         }
@@ -312,6 +309,10 @@ footer{
     }
 }
 
+
+//only test
+
+
 //Media
 @media (min-width: 375px){
     nav{
@@ -332,6 +333,7 @@ footer{
     }
 }
 
+
 @media (min-width: 768px){
     header{
         h1{
@@ -342,16 +344,14 @@ footer{
         }
     }
     .aboutme{
+        height: 520px;
         .card{
             margin-bottom: 50px;
         }
         .card-text{
-            text-align:justify;
+            // text-align:justify;
             margin-left: 300px;
         }
-    }
-    .interests{
-        margin-top: 20vh;   
     }
 }
 
@@ -359,18 +359,8 @@ footer{
     nav{
         height: 84px;
     }
-    .interests{
-        margin-top: 30vh;   
-    }
-    
-}
-@media (min-width: 1200px) {
-    header{
-        .hero-img{
-            // background: url(../img/headerBig.jpg); 
-        }
-    }
-    .interests{
-        margin-top: 35vh;   
+
+    .aboutme{
+        height: 500px;
     }
 }
