@@ -97,6 +97,7 @@ h2{
 //HEADER//
 header{
     color: $white-color;
+    z-index: -11;
     h1{
         text-transform: uppercase;    
         font-size: 21px;
@@ -138,14 +139,7 @@ header{
     .orange-text{
         color: $main-color;
     }
-    .btn-outline-light{
-        opacity: 0;
-        font-size: 14px;
-        animation: show-item-header-animation 2s 2s forwards;
-    }
-    .btn-outline-light:hover{
-        background: rgba(255, 255, 255, 0.4);
-    }
+
     .fa-chevron-down{
         position: absolute;
         left: 50%;
@@ -157,7 +151,59 @@ header{
     }
 }
 //END OF HEADER
+//BUTTON ON HEADER
+.btn{
+    position: relative;
+    padding: 5px 15px;
+    color: black;
+    background-color: $white-color;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 11;
 
+    .bar{
+        position: absolute;
+        top: 0;
+        width: 15%;
+        height: 100%;
+        background-color: rgb(209, 111, 31);
+        transform: translateY(120%); 
+        z-index: -1;
+        transition: transform .3s;
+    }
+
+    :nth-child(1){
+        left: 0; 
+        transition-delay: .3s;
+     }
+     :nth-child(2){
+        left: 20%; 
+        transition-delay: .1s;
+     }
+     :nth-child(3){
+        left: 40%; 
+        transition-delay: .2s;
+     }
+     :nth-child(4){
+        left: 60%; 
+     }
+     :nth-child(5){
+        left: 80%; 
+        transition-delay: .3s;
+     }
+
+    
+}
+
+.btn:hover{
+    color: $white-color;
+    .bar{
+        transform: translateY(0) scale(1.8);
+    }
+}
+//END BUTTON ON HEADER
 //SECTION ABOUT ME
 .aboutme{
     height: 100%;
@@ -311,6 +357,9 @@ footer{
 
 
 //only test
+
+
+
 
 
 //Media

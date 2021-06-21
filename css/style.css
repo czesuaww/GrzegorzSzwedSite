@@ -4,8 +4,7 @@
             transform: translateY(-100%);
   }
   100% {
-    opacity: 1;
-    z-index: 1;
+    z-index: 11;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -17,8 +16,7 @@
             transform: translateY(-100%);
   }
   100% {
-    opacity: 1;
-    z-index: 1;
+    z-index: 11;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -257,6 +255,7 @@ h2 {
 
 header {
   color: #fff;
+  z-index: -11;
 }
 
 header h1 {
@@ -314,17 +313,6 @@ header .orange-text {
   color: orange;
 }
 
-header .btn-outline-light {
-  opacity: 0;
-  font-size: 14px;
-  -webkit-animation: show-item-header-animation 2s 2s forwards;
-          animation: show-item-header-animation 2s 2s forwards;
-}
-
-header .btn-outline-light:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
 header .fa-chevron-down {
   position: absolute;
   left: 50%;
@@ -334,6 +322,70 @@ header .fa-chevron-down {
   opacity: 0;
   font-size: 30px;
   color: #fff;
+}
+
+.btn {
+  position: relative;
+  padding: 5px 15px;
+  color: black;
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.btn .bar {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  background-color: #d16f1f;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+  z-index: -1;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.btn :nth-child(1) {
+  left: 0;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.btn :nth-child(2) {
+  left: 20%;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.btn :nth-child(3) {
+  left: 40%;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.btn :nth-child(4) {
+  left: 60%;
+}
+
+.btn :nth-child(5) {
+  left: 80%;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover .bar {
+  -webkit-transform: translateY(0) scale(1.8);
+          transform: translateY(0) scale(1.8);
 }
 
 .aboutme {
