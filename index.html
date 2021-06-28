@@ -65,11 +65,21 @@
        <section id="aboutme" class="aboutme bg-light">
           <h2>About Me</h2>
           <div class="underline"></div>
-          <div class="container">
-            <div class="card-group float-sm-start">
+          <div class="container ">
+            <div class="about-me-phone d-md-none w-100">
+              <div class="card one">
+                <button><i class="far fa-question-circle"></i></button>
+                <div class="text ">
+                    <p class="my-1">My name is Grzegorz Szwed, born on April 5, 1995, I come from a beautiful town called Brzostek. (That's me in the photo). I graduated from IT studies at the Pedagogical University of Krakow. Throughout my studies, I may not have been strictly interested in programming, nor any other thing directed in that direction. But recently something woke up in me and I started to create (at least try) web sites. It even makes me happy. I bought a few courses that I am working on now and I hope they will help me improve my skills and broaden them. I also solve various tasks that can be found on the internet.</p>
+                    <p>Feel free to browse through (maybe not the best) my website.</p>
+                    <p>Over time, I will post my other project from JS, HTML, CSS, Bootstrap etc. <span>Enjoy</span>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group float-sm-start d-none d-md-block">
               <img src="img/aboutMePictureSmall.jpg" class="card-img-top " alt="picture_of_me">
             </div>
-            <div class="text-about-me">
+            <div class="text-about-me d-none d-md-block">
               <p>My name is Grzegorz Szwed, born on April 5, 1995, I come from a beautiful town called Brzostek. (That's me in the photo). I graduated from IT studies at the Pedagogical University of Krakow. Throughout my studies, I may not have been strictly interested in programming, nor any other thing directed in that direction. But recently something woke up in me and I started to create (at least try) web sites. It even makes me happy. I bought a few courses that I am working on now and I hope they will help me improve my skills and broaden them. I also solve various tasks that can be found on the internet.</p>
               <br>
               <br>
@@ -173,7 +183,7 @@
             <div class="underline"></div>
             <div class="container">
               <!-- Portfolio on mobile -->
-                <div class="card-group d-lg-none">
+                <div class="card-group d-md-none">
                   <div class="card me-sm-3">
                     <img src="./img/portfolioPicSmall.jpg" class="card-img-top" alt="...">
                     <div class="card-body" >
@@ -206,7 +216,7 @@
                   </div> -->
                 </div>
                 <!-- portfolio on dektop -->
-              <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+              <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>

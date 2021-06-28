@@ -402,6 +402,89 @@ header .fa-chevron-down {
   margin-right: 15px;
 }
 
+.aboutme .about-me-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+}
+
+.aboutme .about-me-phone .card {
+  position: relative;
+  margin: 10px;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.aboutme .about-me-phone button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black;
+  cursor: crosshair;
+  z-index: 1;
+}
+
+.aboutme .about-me-phone .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  -webkit-clip-path: circle(0 at 50% 10%);
+          clip-path: circle(0 at 50% 10%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
+}
+
+.aboutme .about-me-phone h1 {
+  color: #b6b361;
+}
+
+.aboutme .about-me-phone h2 {
+  margin-bottom: 30px;
+  color: #8d8a8a;
+}
+
+.aboutme .about-me-phone button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.aboutme .about-me-phone .one {
+  background-image: url(/img/aboutMePicture.jpg);
+}
+
 .interests {
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 }
