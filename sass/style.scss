@@ -152,57 +152,57 @@ header{
 }
 //END OF HEADER
 //BUTTON ON HEADER
-.btn{
-    position: relative;
-    padding: 5px 15px;
-    color: black;
-    background-color: $white-color;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 11;
+// .btn{
+//     position: relative;
+//     padding: 5px 15px;
+//     color: black;
+//     background-color: $white-color;
+//     border-radius: 6px;
+//     border: none;
+//     cursor: pointer;
+//     overflow: hidden;
+//     z-index: 11;
 
-    .bar{
-        position: absolute;
-        top: 0;
-        width: 15%;
-        height: 100%;
-        background-color: rgb(209, 111, 31);
-        transform: translateY(120%); 
-        z-index: -1;
-        transition: transform .3s;
-    }
+//     .bar{
+//         position: absolute;
+//         top: 0;
+//         width: 15%;
+//         height: 100%;
+//         background-color: rgb(209, 111, 31);
+//         transform: translateY(120%); 
+//         z-index: -1;
+//         transition: transform .3s;
+//     }
 
-    :nth-child(1){
-        left: 0; 
-        transition-delay: .3s;
-     }
-     :nth-child(2){
-        left: 20%; 
-        transition-delay: .1s;
-     }
-     :nth-child(3){
-        left: 40%; 
-        transition-delay: .2s;
-     }
-     :nth-child(4){
-        left: 60%; 
-     }
-     :nth-child(5){
-        left: 80%; 
-        transition-delay: .3s;
-     }
+//     :nth-child(1){
+//         left: 0; 
+//         transition-delay: .3s;
+//      }
+//      :nth-child(2){
+//         left: 20%; 
+//         transition-delay: .1s;
+//      }
+//      :nth-child(3){
+//         left: 40%; 
+//         transition-delay: .2s;
+//      }
+//      :nth-child(4){
+//         left: 60%; 
+//      }
+//      :nth-child(5){
+//         left: 80%; 
+//         transition-delay: .3s;
+//      }
 
     
-}
+// }
 
-.btn:hover{
-    color: $white-color;
-    .bar{
-        transform: translateY(0) scale(1.8);
-    }
-}
+// .btn:hover{
+//     color: $white-color;
+//     .bar{
+//         transform: translateY(0) scale(1.8);
+//     }
+// }
 //END BUTTON ON HEADER
 //SECTION ABOUT ME
 
@@ -220,6 +220,8 @@ header{
         border-radius: 5%;
         margin-right: 15px;
     }
+
+    // about me in phone version
     .about-me-phone{
         display: flex;
         width: 1000px;
@@ -282,7 +284,7 @@ header{
         button:hover~.text{
         clip-path: circle(120% at 50% 90%);
         
-    }
+        }
         .one{
             background-image: url(/img/aboutMePicture.jpg);
         }
