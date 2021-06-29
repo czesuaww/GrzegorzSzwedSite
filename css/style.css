@@ -324,70 +324,6 @@ header .fa-chevron-down {
   color: #fff;
 }
 
-.btn {
-  position: relative;
-  padding: 5px 15px;
-  color: black;
-  background-color: #fff;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 11;
-}
-
-.btn .bar {
-  position: absolute;
-  top: 0;
-  width: 15%;
-  height: 100%;
-  background-color: #d16f1f;
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
-  z-index: -1;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-}
-
-.btn :nth-child(1) {
-  left: 0;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-
-.btn :nth-child(2) {
-  left: 20%;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-}
-
-.btn :nth-child(3) {
-  left: 40%;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
-}
-
-.btn :nth-child(4) {
-  left: 60%;
-}
-
-.btn :nth-child(5) {
-  left: 80%;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-
-.btn:hover {
-  color: #fff;
-}
-
-.btn:hover .bar {
-  -webkit-transform: translateY(0) scale(1.8);
-          transform: translateY(0) scale(1.8);
-}
-
 .aboutme {
   height: 100%;
 }
@@ -508,7 +444,86 @@ header .fa-chevron-down {
 }
 
 .education {
+  text-transform: uppercase;
+}
+
+.education .card {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  height: 400px;
+  width: 250px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  border: none;
+}
+
+.education .card .one {
+  background-image: url(/img/up1.jpg);
+}
+
+.education .card .two {
+  background-image: url(/img/up2.jpg);
+}
+
+.education .card .one, .education .card .two {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.education .card .text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  border-radius: 15px;
   text-align: center;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ed 74%);
+  opacity: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.education .card h3 {
+  color: orange;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.education .card p {
+  font-size: 13px;
+  margin: 20px 30px;
+}
+
+.education .card .text-one {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.education .card .text-two {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.education .card:hover .text {
+  opacity: 1;
+}
+
+.education .card:hover .one {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.education .card:hover .two {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .education .underline-school {
@@ -517,38 +532,6 @@ header .fa-chevron-down {
   width: 80%;
   background-color: orange;
   margin-bottom: 15px;
-}
-
-.education .schools-wrap {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.education .scholl {
-  margin: 20px 10px;
-  height: 350px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.education .scholl h3 {
-  padding-top: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.education .scholl p {
-  padding: 15px 25px 25px;
-}
-
-.education .scholl:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .skills {
